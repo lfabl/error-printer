@@ -9,7 +9,6 @@ let OPTIONS = {
   datePureTitle: "Error Date ( Pure )",
   dateFormattedTitle: "Error Date ( Formatted )",
   formattedDateConfig: "DD MMMM YYYY hh:mm A",
-  isWriteCode: true,
   isWritePureDate: true,
   isWriteFormattedDate: true
 };
@@ -48,7 +47,7 @@ const error_log = ({
 ${_options.messageTitle}: ${message}
 `;
 
-  if (_options.isWriteCode) {
+  if (code) {
     errorData += `${_options.codeTitle}: ${code}`;
   }
 
