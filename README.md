@@ -1,6 +1,11 @@
 ### Error Printer for NodeJS
 This project provides a simple function for nodejs where you can automatically write the error message, error code, error date and formatted error date to a file.
 
+###### How to install:
+```
+yarn add error-printer
+```
+
 ###### How to test:
 ```
 yarn test
