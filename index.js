@@ -48,7 +48,7 @@ ${_options.messageTitle}: ${message}
 `;
 
   if (code) {
-    errorData += `${_options.codeTitle}: ${code}`;
+    errorData += `${_options.codeTitle}: ${code}\n`;
   }
 
   if (_options.isWritePureDate) {
