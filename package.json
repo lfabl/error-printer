@@ -1,0 +1,28 @@
+{
+  "name": "error-printer",
+  "version": "1.0.0-pre-alpha.1",
+  "description": "This project was developed for Node JS APIs need to error handling on production.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfabl/error-printer.git"
+  },
+  "keywords": [
+    "error",
+    "handler",
+    "logger"
+  ],
+  "author": "lfabl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfabl/error-printer/issues"
+  },
+  "homepage": "https://github.com/lfabl/error-printer#readme",
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
+}
