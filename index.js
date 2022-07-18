@@ -97,7 +97,7 @@ const error_log = ({ options, message, code }) => {
     }
 
     // Error message:
-    let errorData = `${_options.errorMessagePrefix}: ${message}`;
+    let errorData = `${_options.errorMessagePrefix}: ${message}\n`;
 
     if (code) {
         errorData += `${_options.errorCodePrefix}: ${code}\n`;
