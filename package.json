@@ -1,6 +1,6 @@
 {
   "name": "error-printer",
-  "version": "1.0.0-pre-alpha.4",
+  "version": "2.0.0",
   "description": "This project was developed for Node JS APIs need to error handling on production.",
   "main": "index.js",
   "scripts": {
