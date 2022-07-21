@@ -8,7 +8,8 @@ yarn add error-printer
 
 ###### How to test:
 ```
-yarn test
+// Create folder with name "test" to project directory and then run this command:
+yarn example
 ```
 
 ###### How to run:
