@@ -12,24 +12,10 @@ let OPTIONS = {
     errorDateFormat: undefined,
 };
 
-/**
- * Sets directory of the output log file
- * @param {string} directory
- */
 const setMainDirectory = (directory) => {
     MAIN_DIRECTORY = directory;
 };
 
-/**
- * Set options to be used globally
- * @param {{
- *  outputFileName?: string,
- *  errorMessagePrefix?: string,
- *  errorCodePrefix?: string,
- *  errorDatePrefix?: string,
- *  errorDateFormat?: string
- * }} options
- */
 const setOptions = (options) => {
     OPTIONS = {
         ...OPTIONS,
@@ -37,49 +23,6 @@ const setOptions = (options) => {
     };
 };
 
-/**
- * @typedef {{
- *  outputFileName?: string,
- *  errorMessagePrefix?: string,
- *  errorCodePrefix?: string,
- *  errorDatePrefix?: string,
- *  errorDateFormat?: string
- * }} Options
- * @property {string} outputFileName - (optional) Name of the output file. Default value: "error_log".
- * @property {string} errorMessagePrefix - (optional) Prefix string to be appended just before the error message. Default value: "Error Message".
- * @property {string} errorCodePrefix - (optional) Prefix string to be appended just before the error code. Default value: "Error Code".
- * @property {string} errorDatePrefix - (optional) Prefix string to be appended just before the error date. Default value: "Error Date".
- * @property {string} errorDateFormat - (optional) Format string for date formatting {@link https://momentjs.com/docs/#/displaying/format/}
- *
- * @typedef {{
- *  message: string,
- *  code: string,
- *  options?: Options
- * }} Params
- * @property {string} message - error message to be printed
- * @property {string} code - error code to be printed
- * @property {Options} options - (optional) printing options
- *
- * @param {Params} params
- *
- * @example
- * ```
- * // ES6
- * import error_log from "error-printer";
- *
- * error_log({
- *    options: {
- *      outputFileName: "test.log",
- *      errorMessagePrefix: "Message",
- *      errorCodePrefix: "Code",
- *      errorDatePrefix: "OccuredAt",
- *      errorDateFormat: "DD MMMM YYYY hh:mm A",
- *    },
- *    message: "halo",
- *    code: 400,
- * });
- * ```
- */
 const error_log = ({ options, message, code }) => {
     const _options = {
         ...OPTIONS,
